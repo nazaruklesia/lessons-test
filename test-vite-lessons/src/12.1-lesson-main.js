@@ -17,22 +17,22 @@ import './style.css'
 //     .catch(err => console.log(err.massage))
 
 
-async function foo() {
-    const BASE_URL = "https://jsonplaceholder.typicode.com/todos"; 
-    const todoArr = [1, 2, 3];
+// async function foo() {
+//     const BASE_URL = "https://jsonplaceholder.typicode.com/todos"; 
+//     const todoArr = [1, 2, 3];
 
-    const results = todoArr.map(async(item) => {
+//     const results = todoArr.map(async(item) => {
 
-        const res = await axios(`${BASE_URL}/${item}`);
-        return res.data;
-    })
-    const todos = await Promise.all(results);
-    return todos;
-}
+//         const res = await axios(`${BASE_URL}/${item}`);
+//         return res.data;
+//     })
+//     const todos = await Promise.all(results);
+//     return todos;
+// }
 
-foo()
-    .then(data => console.log(data))
-    .catch(error => console.log(error.massage))
+// foo()
+//     .then(data => console.log(data))
+//     .catch(error => console.log(error.massage))
 
 
 
